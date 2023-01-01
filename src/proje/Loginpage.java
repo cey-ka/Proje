@@ -109,7 +109,6 @@ public class Loginpage extends JFrame {
 						
 					else
 						{
-							//JOptionPane.showMessageDialog(null,"ŞİFRE HATALI");
 							 String msj = "ŞİFRE HATALI";
 							 JOptionPane.showMessageDialog(null, msj, "Sonuç" , JOptionPane.ERROR_MESSAGE);}	
 
@@ -152,7 +151,7 @@ public class Loginpage extends JFrame {
 		btnk.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				dispose();
-			}
+			} 
 		});
 		btnk.setBackground(new Color(0, 0, 128));
 		btnk.setBounds(446, 285, 40, 41);

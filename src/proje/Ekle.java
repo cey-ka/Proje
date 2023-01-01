@@ -144,20 +144,20 @@ public class Ekle extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					String sql = "INSERT INTO kayitlar(adsoy,tc,telno,sınıf,no,adres,veli,velitel) VALUES(?,?,?,?,?,?,?,?)";
-					PreparedStatement pat = connection.prepareStatement(sql);
-					pat.setString(1, adsoytxt.getText());
-					pat.setString(2, tctxt.getText());
-					pat.setString(3, teltxt.getText());
-					pat.setString(4, snftxt.getText());
-					pat.setString(5, notxt.getText());
-					pat.setString(6, adrestxt.getText());
-					pat.setString(7, velitxt.getText());
-					pat.setString(8, veliteltxt.getText());
+					PreparedStatement pst = connection.prepareStatement(sql);
+					pst.setString(1, adsoytxt.getText());
+					pst.setString(2, tctxt.getText());
+					pst.setString(3, teltxt.getText());
+					pst.setString(4, snftxt.getText());
+					pst.setString(5, notxt.getText());
+					pst.setString(6, adrestxt.getText());
+					pst.setString(7, velitxt.getText());
+					pst.setString(8, veliteltxt.getText());
 					 
 					
-					pat.execute();
+					pst.execute();
 					JOptionPane.showMessageDialog(null, "data saved");					 
-					pat.close();
+					pst.close();
 					
 					
 				}catch(Exception e2) {
@@ -263,7 +263,7 @@ public class Ekle extends JFrame {
 		snftxt.setBackground(new Color(255, 255, 255));
 		snftxt.setBounds(151, 150, 157, 20);
 		contentPane.add(snftxt);
-		
+		 
 		JLabel lblNewLabel_9 = new JLabel("New label");
 		lblNewLabel_9.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_9.setBackground(new Color(204, 255, 255));

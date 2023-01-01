@@ -246,7 +246,7 @@ public class Update extends JFrame {
 		btnGeriDn.setFont(new Font("Tahoma", Font.BOLD, 11));
 		btnGeriDn.setBackground(new Color(211, 211, 211)); 
 		btnGeriDn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e) { 
 				YonlendirmePage yonlendir = new YonlendirmePage();
 				yonlendir.setVisible(true);
 				dispose();

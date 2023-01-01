@@ -120,7 +120,7 @@ public class YonlendirmePage extends JFrame {
 				
 				Select tumkayitlar = new Select();
 				tumkayitlar.setVisible(true);
-				dispose();
+				dispose(); 
 			}
 		});
 		btnTmKaytlar.setBounds(131, 227, 56, 51);

@@ -79,11 +79,9 @@ public class Select extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				
-				scrollPane.removeAll();
+				//scrollPane.removeAll();
 				
 				try {
-					
-					
 					String sql = "SELECT * FROM kayitlar";
 					PreparedStatement pst = connection.prepareStatement(sql); 
 					ResultSet rs = pst.executeQuery();
@@ -102,17 +100,15 @@ public class Select extends JFrame {
 							satirlar[7] = rs.getString("velitel");
 							modelim.addRow(satirlar); 
 						}
-						//pst.execute();				
-						//pst.close();
+						
 					} catch (Exception e2) {
-						// TODO: handle exception
 						JOptionPane.showMessageDialog(null, e2);
 					}
 					 
 					table.setModel(modelim);
 				 	 
 				} catch (Exception e2) {
-					// TODO: handle exception
+					
 				}
 				
 				

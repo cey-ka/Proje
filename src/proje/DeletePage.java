@@ -166,7 +166,7 @@ public class DeletePage extends JFrame {
 							satirlar[5] = rs.getString("adres");
 							satirlar[6] = rs.getString("veli");
 							satirlar[7] = rs.getString("velitel");
-							modelim.addRow(satirlar);
+							modelim.addRow(satirlar); 
 						}
 						//pst.execute();				 
 						//pst.close();

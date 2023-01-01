@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 
 
-public class DB_connector {
+public class DB_connector { 
 	Connection conn = null;
 	public static Connection dbConnector()
 	{
